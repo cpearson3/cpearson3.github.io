@@ -1,0 +1,42 @@
+---
+title: Interval Clock
+permalink: /interval-clock/
+layout: default
+custom_css: interval-clock
+custom_js: interval-clock
+---
+
+<div class="container text-center">
+  <br>
+
+  <h1>Interval Clock</h1>
+  <h3>in seconds</h3>
+  <br>
+  <div class="row">
+    <div class="col-md-6">
+      <p>Break Length</p>
+      <button id="subBreakButton"><i class="fa fa-minus-circle"></i></button><span id="breakLength"> : </span>
+      <button id="addBreakButton"><i class="fa fa-plus-circle"></i></button>
+    </div>
+    <div class="col-md-6">
+      <p>Session Length</p>
+      <button id="subSessionButton"><i class="fa fa-minus-circle"></i></button><span id="sessionLength"> : </span>
+      <button id="addSessionButton"><i class="fa fa-plus-circle"></i></button>
+    </div>
+  </div>
+
+  <br>
+  <hr>
+  <p>( Tap to start / stop )</p>
+  <br>
+  <div id="clock" class="center">
+    <h3 id="mode">Session</h3>
+    <h1 id="time">0</h1>
+  </div>
+  <br>
+  <br>
+  <br>
+  <p>Running:
+    <div id="isRunning"></div>
+  </p>
+</div>

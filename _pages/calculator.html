@@ -1,0 +1,88 @@
+---
+layout: default
+title: Simple Calculator
+permalink: /calculator/
+custom_css: calculator
+custom_js:
+- calculator
+---
+
+<div class="container">
+  <h1>Simple Calculator</h1>
+
+  <div class="calculator">
+    <span id="display">0</span>
+
+    <div class="row">
+      <div class="col-xs-2">
+        <input type="button" class="btn btn-default" value="7" onclick="addDigit('7');">
+      </div>
+      <div class="col-xs-2">
+        <input type="button" class="btn btn-default" value="8" onclick="addDigit('8');">
+      </div>
+      <div class="col-xs-2">
+        <input type="button" class="btn btn-default" value="9" onclick="addDigit('9');">
+      </div>
+      <div class="col-xs-3">
+        <input type="button" class="btn btn-default btn-danger" value="C" onclick="clearDisplay();">
+      </div>
+      <div class="col-xs-3">
+        <input type="button" class="btn btn-default btn-danger" value="AC" onclick="allClear();">
+      </div>
+    </div>
+
+    <div class="row">
+
+
+      <div class="col-xs-2">
+        <input type="button" class="btn btn-default" value="4" onclick="addDigit('4');">
+      </div>
+      <div class="col-xs-2">
+        <input type="button" class="btn btn-default" value="5" onclick="addDigit('5');">
+      </div>
+      <div class="col-xs-2">
+        <input type="button" class="btn btn-default" value="6" onclick="addDigit('6');">
+      </div>
+      <div class="col-xs-3">
+        <input type="button" class="btn btn-default btn-primary" value="*" onclick="operate('*')">
+      </div>
+      <div class="col-xs-3">
+        <input type="button" class="btn btn-default btn-primary" value="/" onclick="operate('/')">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-2">
+        <input type="button" class="btn btn-default" value="1" onclick="addDigit('1');">
+      </div>
+      <div class="col-xs-2">
+        <input type="button" class="btn btn-default" value="2" onclick="addDigit('2');">
+      </div>
+      <div class="col-xs-2">
+        <input type="button" class="btn btn-default" value="3" onclick="addDigit('3');">
+      </div>
+      <div class="col-xs-3">
+        <input type="button" class="btn btn-primary" value="+" onclick="operate('+')">
+      </div>
+      <div class="col-xs-3">
+        <input type="button" class="btn btn-primary" value="-" onclick="operate('-')">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-2">
+        <input type="button" class="btn btn-default" value="+ -" onclick="plusMinus();">
+      </div>
+      <div class="col-xs-2">
+        <input type="button" class="btn btn-default" value="0" onclick="addDigit('0');">
+      </div>
+      <div class="col-xs-2">
+        <input type="button" class="btn btn-default" value="." onclick="addDot();">
+      </div>
+      <div class="col-xs-6">
+        <input type="button" class="btn btn-success" value="=" onclick="calculate()">
+      </div>
+    </div>
+  </div>
+
+</div>
