@@ -5810,15 +5810,27 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+.emp {
+  color: #6E6259;
+  font-weigth: bold; }
+
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  padding-top: 65px; }
+  color: #2C2A29; }
 
 h1, h2, h3, h4, h5 {
   font-family: 'Gloria Hallelujah', cursive; }
 
+.header {
+  text-align: center;
+  border-bottom: 1px solid #A2AAAD;
+  padding-top: 25px;
+  padding-bottom: 25px; }
+  .header .navbar {
+    border-bottom: none; }
+
 .page-section {
-  min-height: 400px;
+  min-height: 200px;
   border-bottom: 1px solid #eee; }
   .page-section h1, .page-section h2, .page-section h3, .page-section h4, .page-section h5 {
     text-align: center; }
@@ -5832,15 +5844,17 @@ h1, h2, h3, h4, h5 {
   margin: 0px auto; }
 
 .img-profile {
-  height: 350px;
+  height: 150px;
   margin-top: 40px; }
 
 footer {
   padding-top: 15px;
-  text-align: center;
-  /*
-  ul {
-    li {
-      display: inline;
-    }
-  }*/ }
+  text-align: center; }
+
+.navbar {
+  padding-top: 10px;
+  font-size: 1.5em; }
+  .navbar .navbar-brand {
+    font-size: 1.6em; }
+  .navbar a {
+    color: #2C2A29; }

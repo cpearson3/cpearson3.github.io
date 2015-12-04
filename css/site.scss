@@ -2,20 +2,37 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
+
 @import "bootstrap";
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro|Gloria+Hallelujah);
 
+.emp {
+  color: #6E6259;
+  font-weigth: bold;
+}
+
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  padding-top: 65px;
+  color: #2C2A29;
 }
 
 h1, h2, h3, h4, h5 {
   font-family: 'Gloria Hallelujah', cursive;
 }
 
+.header {
+  text-align: center;
+  border-bottom: 1px solid #A2AAAD;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  
+  .navbar {
+    border-bottom: none;
+  }
+}
+
 .page-section {
-  min-height: 400px;
+  min-height: 200px;
   border-bottom: 1px solid #eee;
   h1, h2, h3, h4, h5 {
     text-align: center;
@@ -37,18 +54,22 @@ h1, h2, h3, h4, h5 {
 }
 
 .img-profile {
-  height: 350px;
+  height: 150px;
   margin-top: 40px
 }
 
 footer {
   padding-top: 15px;
   text-align: center;
-  /*
-  ul {
-    li {
-      display: inline;
-    }
-  }*/
 }
 
+.navbar {
+  padding-top: 10px;
+  font-size: 1.5em;
+  .navbar-brand {
+    font-size: 1.6em;
+  }
+  a {
+    color: #2C2A29;
+  }
+}
