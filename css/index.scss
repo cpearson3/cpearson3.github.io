@@ -1,8 +1,21 @@
 ---
 ---
+@import "animations";
 
 .page-section {
-    .panel-body {
-        height: 100px;
+    .btn-center {
+        @include delay(0.5);
+        
+        display: table;
+        margin: 0 auto;
+        padding: 10px;
+        text-align: center;
+        border: 1px solid #ccc;
+        color: #000;
+        
+        &:hover {
+            color: #000;
+        }
     }
 }
+

@@ -1,0 +1,14 @@
+
+// site animations
+
+$duration: 2s;
+
+@mixin duration($t) {
+  -webkit-animation-duration: $t; /* Chrome, Safari, Opera */
+  animation-duration: $t;
+}
+
+@mixin delay($t) {
+    -webkit-animation-delay: $t*$duration; /* Safari */
+    animation-delay: $t*$duration;
+}

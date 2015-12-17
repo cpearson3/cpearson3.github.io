@@ -5846,7 +5846,7 @@ h1, h2, h3, h4, h5 {
   margin-top: 40px; }
 
 footer {
-  padding-top: 15px;
+  padding-top: 25px;
   text-align: center; }
 
 .navbar {
@@ -5856,8 +5856,3 @@ footer {
     font-size: 1.6em; }
   .navbar a {
     color: #2C2A29; }
-
-.panel img {
-  max-height: 100px; }
-.panel .panel-body {
-  height: 150px; }

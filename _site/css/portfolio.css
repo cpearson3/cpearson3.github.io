@@ -4,7 +4,7 @@ figure {
   float: left;
   overflow: hidden;
   margin: 0 20px 20px 0;
-  height: 180px;
+  height: 150px;
   width: 100%;
   border: 1px solid #eee;
   padding: 5px; }
@@ -32,7 +32,8 @@ figure {
     opacity: 0; }
   figure .title {
     font-weight: bold;
-    text-align: center; }
+    text-align: center;
+    font-size: 18px; }
   figure .description {
     text-align: center; }
 

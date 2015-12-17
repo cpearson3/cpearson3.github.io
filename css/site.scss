@@ -2,9 +2,10 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-
 @import "bootstrap";
 @import url(https://fonts.googleapis.com/css?family=Slabo+27px|Lato);
+
+@import "animations";
 
 .emp {
   color: #6E6259;
@@ -58,7 +59,7 @@ h1, h2, h3, h4, h5 {
 }
 
 footer {
-  padding-top: 15px;
+  padding-top: 25px;
   text-align: center;
 }
 
@@ -72,13 +73,4 @@ footer {
     color: #2C2A29;
   }
   
-}
-
-.panel {
-  img {
-    max-height: 100px;
-  }
-  .panel-body {
-    height: 150px;
-  }
 }
