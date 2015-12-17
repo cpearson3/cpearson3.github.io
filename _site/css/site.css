@@ -5829,8 +5829,7 @@ h1, h2, h3, h4, h5 {
     border-bottom: none; }
 
 .page-section {
-  min-height: 200px;
-  border-bottom: 1px solid #eee; }
+  min-height: 200px; }
   .page-section h1, .page-section h2, .page-section h3, .page-section h4, .page-section h5 {
     text-align: center; }
   .page-section h1 {
