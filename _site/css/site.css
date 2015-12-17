@@ -5,7 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro|Gloria+Hallelujah);
+@import url(https://fonts.googleapis.com/css?family=Slabo+27px|Lato);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -5815,11 +5815,11 @@ button.close {
   font-weigth: bold; }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Slabo', serif;
   color: #2C2A29; }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Gloria Hallelujah', cursive; }
+  font-family: 'Lato', sans-serif; }
 
 .header {
   text-align: center;
@@ -5858,3 +5858,8 @@ footer {
     font-size: 1.6em; }
   .navbar a {
     color: #2C2A29; }
+
+.panel img {
+  max-height: 100px; }
+.panel .panel-body {
+  height: 150px; }

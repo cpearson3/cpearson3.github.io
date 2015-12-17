@@ -4,7 +4,7 @@
 
 
 @import "bootstrap";
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro|Gloria+Hallelujah);
+@import url(https://fonts.googleapis.com/css?family=Slabo+27px|Lato);
 
 .emp {
   color: #6E6259;
@@ -12,12 +12,12 @@
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Slabo', serif;
   color: #2C2A29;
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'Lato', sans-serif;
 }
 
 .header {
@@ -73,4 +73,13 @@ footer {
     color: #2C2A29;
   }
   
+}
+
+.panel {
+  img {
+    max-height: 100px;
+  }
+  .panel-body {
+    height: 150px;
+  }
 }
