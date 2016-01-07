@@ -8,8 +8,7 @@
 # Site settings
 title: Clarence Beaulo Pearson III
 email: clarence.pearson3@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  I am Clarence B Pearson III, Developer.
+description: I am Clarence B Pearson III, Web Developer
 baseurl: "/cpearson3.github.io" # the subpath of your site, e.g. /blog
 url: "http://cpearson3.github.io" # the base hostname & protocol for your site
 github_username:  cpearson3
