@@ -2,6 +2,7 @@
 ---
 
 // A Sassy version of https://css-tricks.com/examples/SlideinCaptions/
+@import "variables";
 
 figure {
   display: block;
@@ -11,7 +12,7 @@ figure {
   margin: 0 20px 20px 0;
   height: 150px;
   width: 100%;
-  border: 1px solid #eee;
+  border: $border;
   padding: 5px;
   
   &:before {

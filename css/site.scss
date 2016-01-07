@@ -2,75 +2,14 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-@import "bootstrap";
-@import url(https://fonts.googleapis.com/css?family=Slabo+27px|Lato);
+@import "bootsmooth";
 
-@import "animations";
-
-.emp {
-  color: #6E6259;
-  font-weigth: bold;
-}
-
-body {
-  font-family: 'Slabo', serif;
-  color: #2C2A29;
-}
-
-h1, h2, h3, h4, h5 {
-  font-family: 'Lato', sans-serif;
-}
-
-.header {
-  text-align: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  
-  .navbar {
-    border-bottom: none;
-  }
-}
-
-.page-section {
-  min-height: 200px;
-  
-  h1, h2, h3, h4, h5 {
-    text-align: center;
-  }
-  
-  h1 { 
-    padding-top: 50px;
-  }
-  
-  h3 {
-    font-style: italic;
-  }
-  
-}
-
-.center {
-  display: table;
-  margin: 0px auto;
+.container {
+    min-height: 320px;
+    border-bottom: $border;
 }
 
 .img-profile {
-  height: 150px;
-  margin-top: 40px
-}
-
-footer {
-  padding-top: 25px;
-  text-align: center;
-}
-
-.navbar {
-  padding-top: 10px;
-  font-size: 1.5em;
-  .navbar-brand {
-    font-size: 1.6em;
-  }
-  a {
-    color: #2C2A29;
-  }
-  
+    height: 200px;
+    border-radius: 100%;
 }

@@ -15,6 +15,11 @@ url: "http://clarencebeaulo.appspot.com" # the base hostname & protocol for your
 github_username:  cpearson3
 
 # Build settings
+sass:
+  load_paths:
+    - _sass
+    - bower_components/bootsmooth/src/scss
+exclude: ['bower_components']
 include: ['_pages']
 markdown: kramdown
 

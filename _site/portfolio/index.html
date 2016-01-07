@@ -11,16 +11,13 @@
 ">
   
   <link rel="stylesheet" href="/cpearson3.github.io/css/site.css">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-3dkvEK0WLHRJ7/Csr0BZjAWxERc5WH7bdeUya2aXxdU= sha512-+L4yy6FRcDGbXJ9mPG8MT/3UCDzwR9gPeyFNMCtInsol++5m3bk2bXWKdZjvybmohrAsn3Ua5x8gfLnbE1YkOg==" crossorigin="anonymous">
   <link rel="stylesheet" href="/cpearson3.github.io/css/animate.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
   
     
       <link rel="stylesheet" href="/cpearson3.github.io/css/portfolio.css" media="screen" type="text/css">
     
-  
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script>
   
 </head>
 
@@ -28,39 +25,34 @@
   <body>
 
     <!-- Navigation Bar -->
-<nav class="navbar">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-        <i class="fa fa-plus-square"></i>
-      </button>
-      <a class="navbar-brand" href="/"><i class="fa fa-user-secret"></i> CPEARSON3</a>
-    </div>
-    <div class="collapse navbar-collapse" id="navbar-collapse">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="/about/"><i class="fa fa-user"></i> Me</a></li>
-        <li><a href="/resume/"<i class="fa fa-file-code-o"></i> Resume</a></li>
-        <li><a href="/portfolio/"><i class="fa fa-folder-open"></i> Portfolio</a></li>
-        <li><a href="/contact/"><i class="fa fa-envelope-o"></i> Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+  <nav class="nav">
+    <div class="nav-title"><a href="/">@CBP3DEV</a></div>
+    <!-- nav menu toggle -->
+    <a class="toggle-nav" onclick="$('#main-nav').slideToggle('fast')">@CBP3DEV</a>
+    <ul id="main-nav">
+      <li><a href="/resume/"<i class="fa fa-file-code-o"></i> Resume</a></li>
+      <li><a href="/portfolio/"><i class="fa fa-folder-open"></i> Portfolio</a></li>
+      <li><a href="/contact/"><i class="fa fa-envelope-o"></i> Contact</a></li>
+    </ul>
+  </nav>
 
 
-<div class="header">
-  <h2>The Portfolio of Work</h2>
-</div>
+    <div class="container nav-pad">
 
-
-    <div class="container page">
-      
-      <a href="#" class="scrollToTop"></a>
-
-      <br>
+      <h1>Portfolio</h1>
+<br>
 <p class="lead">Web sites:</p>
 <div class="row">
-  <div class="col-md-4">
+  <div class="col-4">
+    <figure class="cap-right">
+      <h3 class="title">Bootsmooth.com</h3>
+      <p class="description">Angular JS UI framework</p>
+      <figcaption>
+        <a href="http://www.bootsmooth.com" target="_blank">Visit Project</a>
+      </figcaption>
+    </figure>
+  </div>
+  <div class="col-4">
     <figure class="cap-right">
       <h3 class="title">WVWoodsFamilyReunion.com</h3>
       <p class="description">The home of the Woods Family Reunion</p>
@@ -71,7 +63,7 @@
       </figcaption>  
     </figure>
   </div>
-  <div class="col-md-4">
+  <div class="col-4">
     <figure class="cap-right">
       <h3 class="title">Classics Cafe</h3>
       <p class="description">A small cafe located in Fairmont WV</p>
@@ -85,16 +77,7 @@
 <br>
 <p class="lead">Coding projects:</p>
 <div class="row">
-  <div class="col-md-4">
-    <figure class="cap-right">
-      <h3 class="title">Bootsmooth</h3>
-      <p class="description">Another respsonsive CSS framework</p>
-      <figcaption>
-        <a href="http://www.bootsmooth.com" target="_blank">Visit Project</a>
-      </figcaption>
-    </figure>
-  </div>
-  <div class="col-md-4">
+  <div class="col-4">
     <figure class="cap-right">
       <h3 class="title"><i class="fa fa-calculator"></i> Simple Calc</h3>
       <p class="description">A Simple Javascript Calculator</p>
@@ -103,7 +86,7 @@
       </figcaption>
     </figure>
   </div>
-  <div class="col-md-4">
+  <div class="col-4">
     <figure class="cap-right">
       <h3 class="title"><i class="fa fa-clock-o"></i> Interval Clock</h3></h3>
       <p class="description">A Simple Interval Clock</p>
@@ -112,7 +95,7 @@
       </figcaption>
     </figure>
   </div>
-  <div class="col-md-4">
+  <div class="col-4">
      <figure class="cap-right">
       <h3 class="title"><i class="fa fa-quote-left"></i> Random Quotes</h3>
       <p class="description">A random quote generator</p>
@@ -120,23 +103,21 @@
         <a href="/random-quote/" target="_blank">Visit Project</a>
       </figcaption>
     </figure>
+  </div>
 </div>
 
 
     </div>
 
-    
-<!-- Footer -->
-<footer>
-  <ul class="nav nav-pills center">
-     <li><a href="/about/"><i class="fa fa-user"></i> Me</a></li>
-        <li><a href="/resume/"<i class="fa fa-file-code-o"></i> Resume</a></li>
-        <li><a href="/portfolio/"><i class="fa fa-folder-open"></i> Portfolio</a></li>
-        <li><a href="/contact/"><i class="fa fa-envelope-o"></i> Contact</a></li>
-  </ul>
-
-  <p>Clarence Pearson 2015 &copy;</p>
+    <!-- Footer -->
+<footer class="footer">
+  <p class="txt-center">Clarence Pearson &copy; 2016</p>
 </footer>
+
+<!-- Scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/2.0.0-beta.0/Rx.js"></script>
+<script src="/javascript/bootsmooth.js"></script>
 
 
 

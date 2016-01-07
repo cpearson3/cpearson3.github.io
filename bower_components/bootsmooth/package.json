@@ -1,0 +1,38 @@
+{
+  "name": "bootsmooth",
+  "version": "1.0.1",
+  "description": "Responsive Web App Framework",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browserify": "^12.0.1",
+    "gulp": "^3.9.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-clean": "^0.3.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-jshint": "^2.0.0",
+    "gulp-sass": "^2.1.1",
+    "gulp-util": "^3.0.7",
+    "jshint": "^2.9.1-rc1",
+    "gulp-uglify": "^1.5.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cpearson3/bootsmooth.git"
+  },
+  "keywords": [
+    "css",
+    "scss",
+    "responsive",
+    "framework",
+    "angular"
+  ],
+  "author": "cpearson3",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cpearson3/bootsmooth/issues"
+  },
+  "homepage": "https://github.com/cpearson3/bootsmooth"
+}

@@ -1,0 +1,77 @@
+// general color defines
+$background-color: #FFF;
+$foreground-color: #333;
+$primary-color: #75a3d1;
+$info-color: #bcc747;
+$success-color: #5bb12f;
+$warning-color: #d9411e;
+$attention-color: #e05151;
+$active-color: #cbc5c1;
+/*
+$primary-color: #483743;
+$info-color: #ce9933;
+$success-color: #756a48;
+$warning-color: #9A3334;
+$attention-color: #ce4e34;
+$active-color: #cbc5c1;
+*/
+
+$background-color-dark: darken($background-color, 10%);
+$foreground-color-dark: darken($foreground-color, 10%);
+$primary-color-dark: darken($primary-color, 10%);
+$info-color-dark: darken($info-color, 10%);
+$success-color-dark: darken($success-color, 10%);
+$warning-color-dark: darken($warning-color, 10%);
+$attention-color-dark: darken($attention-color, 10%);
+$active-color-dark: darken($active-color, 10%);
+
+$background-color-light: lighten($background-color, 10%);
+$foreground-color-light: lighten($foreground-color, 10%);
+$primary-color-light: lighten($primary-color, 10%);
+$info-color-light: lighten($info-color, 10%);
+$success-color-light: lighten($success-color, 10%);
+$warning-color-light: lighten($warning-color, 10%);
+$attention-color-light: lighten($attention-color, 10%);
+$active-color-light: lighten($active-color, 10%);
+
+// spacing
+$spacing: 8px;
+
+// font
+$font-size: 18px;
+$font-size-medium: 14px;
+$font-size-small: 12px;
+$font-weight: 100;
+$heading-line-height: 1.1;
+$heading-margin: 1em;
+$line-height: 1.5;
+
+// border vars
+$border-radius: 0px;
+$border: 1px solid $foreground-color;
+
+// font styles
+$font-body: 'Raleway', sans-serif;
+$font-heading: 'PT Sans', sans-serif;
+
+// navigation
+$nav-font-size: $font-size-medium;
+$nav-height: $nav-font-size+$spacing*4;
+$nav-padding: $spacing*2 $spacing $spacing*2 $spacing;
+
+// buttons
+$btn-height: 38px;
+
+// footer
+$footer-height: $nav-height;
+$footer-padding: $nav-height;
+
+// animations
+$transition-time: 0.3s;
+
+// shadows
+$shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+// slideouts
+$slideout-width: 240px;
+$slideout-height: $nav-height;

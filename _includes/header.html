@@ -1,25 +1,11 @@
 <!-- Navigation Bar -->
-<nav class="navbar">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-        <i class="fa fa-plus-square"></i>
-      </button>
-      <a class="navbar-brand" href="/"><i class="fa fa-user-secret"></i> CPEARSON3</a>
-    </div>
-    <div class="collapse navbar-collapse" id="navbar-collapse">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="/about/"><i class="fa fa-user"></i> Me</a></li>
-        <li><a href="/resume/"<i class="fa fa-file-code-o"></i> Resume</a></li>
-        <li><a href="/portfolio/"><i class="fa fa-folder-open"></i> Portfolio</a></li>
-        <li><a href="/contact/"><i class="fa fa-envelope-o"></i> Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-{% if page.description %}
-<div class="header">
-  <h2>{{page.description}}</h2>
-</div>
-{% endif %}
+  <nav class="nav">
+    <div class="nav-title"><a href="/">@CBP3DEV</a></div>
+    <!-- nav menu toggle -->
+    <a class="toggle-nav" onclick="$('#main-nav').slideToggle('fast')">@CBP3DEV</a>
+    <ul id="main-nav">
+      <li><a href="/resume/"<i class="fa fa-file-code-o"></i> Resume</a></li>
+      <li><a href="/portfolio/"><i class="fa fa-folder-open"></i> Portfolio</a></li>
+      <li><a href="/contact/"><i class="fa fa-envelope-o"></i> Contact</a></li>
+    </ul>
+  </nav>
