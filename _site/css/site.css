@@ -207,7 +207,7 @@ ul, ol {
 .pull-left {
   float: left; }
 
-.center, .table {
+.center, .table, .sidebar img {
   display: table;
   margin: 0 auto; }
 
@@ -372,7 +372,7 @@ ul, ol {
   padding: 8px;
   border-radius: 0px; }
 
-.bg-inverse {
+.bg-inverse, body {
   background-color: #333 !important;
   color: #FFF !important; }
 
@@ -488,17 +488,15 @@ label {
 .form-input, .form-input-inline, .nav-input {
   display: block;
   width: 100%;
-  padding: 8px 16px;
+  padding: 4px 8px;
   font-size: 18px;
   color: #333;
   background-color: #FFF;
   background-image: none;
-  border-left: none;
-  border-right: none;
-  border-top: none;
-  border-bottom: 1px solid #333;
+  border: 1px solid #333;
   border-radius: 0px;
-  verticle-align: middle; }
+  verticle-align: middle;
+  line-height: 1.5; }
   .form-input:required, .form-input-inline:required, .nav-input:required {
     border-color: #d9411e; }
 
@@ -507,8 +505,10 @@ label {
   width: auto;
   margin-left: 8px;
   margin-right: 8px;
-  text-align: center;
-  font-weight: bold; }
+  font-size: 14px;
+  border-top: none;
+  border-right: none;
+  border-left: none; }
 
 .nav-input {
   border: 1px solid #333; }
@@ -679,40 +679,34 @@ pre, code {
   width: 100%;
   min-height: 46px; }
 
-i.ico {
-  font-style: normal; }
-
-.ico-home:before {
-  content: "\1f3e0"; }
-
-.ico-bars:before {
-  content: "\2261"; }
-
-.ico-thumbs-up:before {
-  content: "\1F44D"; }
-
-.ico-thumbs-down:before {
-  content: "\1F44E"; }
-
-.ico-gear:before {
-  content: "\2699"; }
-
-.ico-arrow-down:before {
-  content: "\9660"; }
-
-.ico-pencil:before {
-  content: "\270F"; }
-
-.ico-star:before {
-  content: "\10032"; }
-
-.ico-recycle:before {
-  content: "\267C"; }
-
-.container, .modal-dialog {
-  min-height: 320px;
-  border-bottom: 1px solid #333; }
-
 .img-profile {
   height: 200px;
   border-radius: 100%; }
+
+.sidebar {
+  padding-left: 16px;
+  font-size: 14px;
+  height: 100%; }
+  .sidebar a {
+    color: #cbc5c1;
+    text-decoration: underline;
+    font-weight: bolder;
+    transition: font-size 0.3s ease; }
+    .sidebar a:hover {
+      font-weight: bold;
+      font-size: 18px; }
+  .sidebar .list-item {
+    height: 36px;
+    border: none;
+    text-align: center; }
+  .sidebar hr {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #cbc5c1; }
+
+.page {
+  color: #333;
+  background-color: #FFF;
+  padding-left: 16px;
+  min-height: 480px;
+  border-bottom-right-radius: 4px; }

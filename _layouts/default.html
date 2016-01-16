@@ -4,15 +4,35 @@
   {% include head.html %}
 
   <body>
-
+  <!-- 
     {% include header.html %}
-
-    <div class="container nav-pad">
-
-      {{ content }}
-
+  -->
+    <div class="row content">
+      <div class="col-9 nav-pad page">
+          {{ content }}
+      </div>
+      <div class="col-3 sidebar nav-pad">
+        <img class="img img-profile" src="/images/me2.png" alt="">
+        <h1 class="txt-center">CLARENCE B PEARSON III</h1>
+        <ul class="list-group">
+          <li class="list-item"><a href="/">Home</a></li>
+          <li class="list-item"><a href="/resume/">Resume</a></li>
+          <li class="list-item"><a href="/portfolio/">Portfolio</a></li>
+          <li class="list-item"><a href="/contact/">Contact</a></li>
+        </ul>
+        <br>
+        <ul class="list-group">
+            <li class="list-item"><a href="http://www.github.com/cpearson3" target="_blank">Github</a></li> 
+            <li class="list-item"><a href="http://www.linkedin.com/pub/clarence-pearson/37/12a/b13" target="_blank">LinkedIn</a></li> 
+            <li class="list-item"><a href="http://www.twitter.com/cp3dev" target="_blank">Twitter</a></li>
+        </ul>
+        <div class="footer">
+          <p class="txt-center">Clarence Pearson &copy; 2016</p>
+          
+        </div>
+      </div>
     </div>
-
+    
     {% include footer.html %}
 
   </body>
