@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="MyApp">
 
   <head>
   <meta charset="utf-8">
@@ -21,62 +21,53 @@
 </head>
 
 
-  <body>
-  <!-- 
-    <nav class="nav">
-  <div class="nav-title"><a href="/">@CBP3DEV</a></div>
-  <a class="toggle-nav" onclick="$('#main-nav').slideToggle('fast')">@CBP3DEV</a>
-  <ul id="main-nav">
-    <li><a href="/resume/"<i class="fa fa-file-code-o"></i> Resume</a></li>
-    <li><a href="/portfolio/"><i class="fa fa-folder-open"></i> Portfolio</a></li>
-    <li><a href="/contact/"><i class="fa fa-envelope-o"></i> Contact</a></li>
-  </ul>
-</nav>
+  <body ng-controller="DefaultController">
+    <button class="btn shadowed fixed-top-left" ng-click="showMenu()"><small><i class="fa fa-bars"></i> menu</small></button>
+<btn-dropdown title="@me" class="fixed-top-right shadowed" style="width: 120px">
+    <list-link href="http://www.github.com/cpearson3"><i class="fa fa-github"></i> github</list-link>
+    <list-link href="http://www.twitter.com/cp3dev"><i class="fa fa-twitter"></i> twitter</list-link>
+    <list-link href="http://www.linkedin.com/pub/clarence-pearson/37/12a/b13"><i class="fa fa-linkedin"></i> linkedin</list-link>
+</btn-dropdown>
 
-  -->
-    <div class="row content">
-      <div class="col-9 nav-pad page animated fadeIn">
-          <h1>About me</h1>
-<p>I am a web and database application developer with 5+ years of professional experience,
-based in Morgantown, WV, USA. I have worked with numerous clients, from small businesses to universities, to <b>design, develop, and support</b> many types of applications.
-I always <b>prioritize communication</b> with the users and clients to establish a clear set of requirements. I'm strongly focused on delivering <b>maintainable code</b> and I pay attention to details.
-</p>
-<p>
-    The type of work I've done includes: Building database queries and stored procedures in <b>PL SQL</b>;
-    developing reports with <b>Oracle Reports, Excel, and the web</b>; creating user interfaces for desktop database users with
-    <b>Oracle Forms Builder</b> and for mobile web users using <b>Angular, jQuery, Bootstrap and custom CSS frameworks</b>;
-    building <b>Python and Shell scripts</b> for system jobs and development tools; and managing projects with <b>Git</b>.
+<slideout type="left" show="menuShown">
+<img class="img img-profile" src="/images/me2.png" alt="">
+<ul class="list-group">
+  <li class="list-item"><a href="/">Home</a></li>
+  <li class="list-item"><a href="/about/">About</a></li>
+  <li class="list-item"><a href="/resume/">Resume</a></li>
+  <li class="list-item"><a href="/portfolio/">Portfolio</a></li>
+  <li class="list-item"><a href="/contact/">Contact</a></li>
 </ul>
-
-      </div>
-      <div class="col-3 sidebar nav-pad">
-        <img class="img img-profile" src="/images/me2.png" alt="">
-        <h1 class="txt-center">CLARENCE B PEARSON III</h1>
-        <ul class="list-group">
-          <li class="list-item"><a href="/">Home</a></li>
-          <li class="list-item"><a href="/resume/">Resume</a></li>
-          <li class="list-item"><a href="/portfolio/">Portfolio</a></li>
-          <li class="list-item"><a href="/contact/">Contact</a></li>
-        </ul>
-        <br>
-        <ul class="list-group">
-            <li class="list-item"><a href="http://www.github.com/cpearson3" target="_blank">Github</a></li> 
-            <li class="list-item"><a href="http://www.linkedin.com/pub/clarence-pearson/37/12a/b13" target="_blank">LinkedIn</a></li> 
-            <li class="list-item"><a href="http://www.twitter.com/cp3dev" target="_blank">Twitter</a></li>
-        </ul>
-        <div class="footer">
-          <p class="txt-center">Clarence Pearson &copy; 2016</p>
-          
-        </div>
-      </div>
+</slideout>
+    
+    <div class="cover">
+      <h1>CLARENCE B PEARSON III</h1>
+      <h3>Web and Database App Developer</h3>
+      <br>
+      <a href="/about/" class="btn">About me <i class="fa fa-arrow-right"></i></a>
     </div>
     
+    <div class="footer bg-inverse txt-center">
+  <p>
+    <a href="/">Home</a></li> | 
+    <a href="/about/">About</a> | 
+    <a href="/resume/">Resume</a> | 
+    <a href="/portfolio/">Portfolio</a> | 
+    <a href="/contact/">Contact</a>
+  </p>
+  <p class="h5">
+    <a style="padding-right: 8px" class="fa fa-github"></a> 
+    <a style="padding-right: 8px" class="fa fa-twitter"></a> 
+    <a class="fa fa-linkedin"></a>
+  </p>
+  <p>Clarence Pearson &copy; 2016</p>
+</div>
     <!-- Footer -->
 <!-- Scripts -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/2.0.0-beta.0/Rx.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
 <script src="/javascript/bootsmooth.js"></script>
-
+<script src="/javascript/default.js"></script>
 
 
   </body>

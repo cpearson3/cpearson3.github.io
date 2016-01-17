@@ -1,16 +1,26 @@
 ---
 title: CPEARSON3
-layout: default
 custom_css: index
 ---
-<h1>About me</h1>
-<p>I am a web and database application developer with 5+ years of professional experience,
-based in Morgantown, WV, USA. I have worked with numerous clients, from small businesses to universities, to <b>design, develop, and support</b> many types of applications.
-I always <b>prioritize communication</b> with the users and clients to establish a clear set of requirements. I'm strongly focused on delivering <b>maintainable code</b> and I pay attention to details.
-</p>
-<p>
-    The type of work I've done includes: Building database queries and stored procedures in <b>PL SQL</b>;
-    developing reports with <b>Oracle Reports, Excel, and the web</b>; creating user interfaces for desktop database users with
-    <b>Oracle Forms Builder</b> and for mobile web users using <b>Angular, jQuery, Bootstrap and custom CSS frameworks</b>;
-    building <b>Python and Shell scripts</b> for system jobs and development tools; and managing projects with <b>Git</b>.
-</ul>
+
+<!DOCTYPE html>
+<html ng-app="MyApp">
+
+  {% include head.html %}
+
+  <body ng-controller="DefaultController">
+    {% include header.html %}
+    
+    <div class="cover">
+      <h1>CLARENCE B PEARSON III</h1>
+      <h3>Web and Database App Developer</h3>
+      <br>
+      <a href="/about/" class="btn">About me <i class="fa fa-arrow-right"></i></a>
+    </div>
+    
+    {% include footer.html %}
+    {% include scripts.html %}
+
+  </body>
+
+</html>

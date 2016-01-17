@@ -18,23 +18,25 @@
 
 
   <body ng-controller="DefaultController">
-    <button class="btn shadowed fixed-top-left" ng-click="showMenu()"><small><i class="fa fa-bars"></i> menu</small></button>
-<btn-dropdown title="@me" class="fixed-top-right shadowed" style="width: 120px">
-    <list-link href="http://www.github.com/cpearson3"><i class="fa fa-github"></i> github</list-link>
-    <list-link href="http://www.twitter.com/cp3dev"><i class="fa fa-twitter"></i> twitter</list-link>
-    <list-link href="http://www.linkedin.com/pub/clarence-pearson/37/12a/b13"><i class="fa fa-linkedin"></i> linkedin</list-link>
+    <!-- <nav class="nav">
+  <div class="nav-title"><a href="/">@CBP3DEV</a></div>
+  <a class="toggle-nav" onclick="$('#main-nav').slideToggle('fast')">@CBP3DEV</a>
+  <ul id="main-nav">
+    <li><a href="/resume/"<i class="fa fa-file-code-o"></i> Resume</a></li>
+    <li><a href="/portfolio/"><i class="fa fa-folder-open"></i> Portfolio</a></li>
+    <li><a href="/contact/"><i class="fa fa-envelope-o"></i> Contact</a></li>
+  </ul>
+</nav>
+<a href="/" class="btn shadow fixed-top-left"><small><i class="fa fa-user"></i> cbp3</small></a>
+-->
+
+<button class="btn shadow fixed-top-left" ng-click="showMenu()"><small><i class="fa fa-bars"></i> menu</small></button>
+<btn-dropdown title="@me" class="fixed-top-right" style="width: 100px">
+    <list-link href="http://www.github.com/cpearson3">github</list-link>
+    <list-link href="http://www.twitter.com/cp3dev">twitter</list-link>
+    <list-link href="http://www.linkedin.com/pub/clarence-pearson/37/12a/b13">linkeddin</list-link>
 </btn-dropdown>
 
-<slideout type="left" show="menuShown">
-<img class="img img-profile" src="/images/me2.png" alt="">
-<ul class="list-group">
-  <li class="list-item"><a href="/">Home</a></li>
-  <li class="list-item"><a href="/about/">About</a></li>
-  <li class="list-item"><a href="/resume/">Resume</a></li>
-  <li class="list-item"><a href="/portfolio/">Portfolio</a></li>
-  <li class="list-item"><a href="/contact/">Contact</a></li>
-</ul>
-</slideout>
     
     <div class="container nav-pad">
       <h1>About me</h1>
@@ -50,22 +52,22 @@ I always <b>prioritize communication</b> with the users and clients to establish
 </ul>
 
     </div>
+    <div class="footer bg-inverse">
+      <p class="txt-center">Clarence Pearson &copy; 2016</p>
+    </div>
     
-    <div class="footer bg-inverse txt-center">
-  <p>
-    <a href="/">Home</a></li> | 
-    <a href="/about/">About</a> | 
-    <a href="/resume/">Resume</a> | 
-    <a href="/portfolio/">Portfolio</a> | 
-    <a href="/contact/">Contact</a>
-  </p>
-  <p class="h5">
-    <a style="padding-right: 8px" class="fa fa-github"></a> 
-    <a style="padding-right: 8px" class="fa fa-twitter"></a> 
-    <a class="fa fa-linkedin"></a>
-  </p>
-  <p>Clarence Pearson &copy; 2016</p>
-</div>
+    <slideout type="left" show="menuShown">
+      <img class="img img-profile" src="/images/me2.png" alt="">
+        <p class="txt-center">CLARENCE B PEARSON III</p>
+        <ul class="list-group">
+          <li class="list-item"><a href="/">Home</a></li>
+          <li class="list-itme"><a href="/about/">About</a></li>
+          <li class="list-item"><a href="/resume/">Resume</a></li>
+          <li class="list-item"><a href="/portfolio/">Portfolio</a></li>
+          <li class="list-item"><a href="/contact/">Contact</a></li>
+        </ul>
+    </slideout>
+    
     <!-- Footer -->
 <!-- Scripts -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>

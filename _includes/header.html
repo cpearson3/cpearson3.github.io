@@ -1,9 +1,17 @@
-<nav class="nav">
-  <div class="nav-title"><a href="/">@CBP3DEV</a></div>
-  <a class="toggle-nav" onclick="$('#main-nav').slideToggle('fast')">@CBP3DEV</a>
-  <ul id="main-nav">
-    <li><a href="/resume/"<i class="fa fa-file-code-o"></i> Resume</a></li>
-    <li><a href="/portfolio/"><i class="fa fa-folder-open"></i> Portfolio</a></li>
-    <li><a href="/contact/"><i class="fa fa-envelope-o"></i> Contact</a></li>
-  </ul>
-</nav>
+<button class="btn shadowed fixed-top-left" ng-click="showMenu()"><small><i class="fa fa-bars"></i> menu</small></button>
+<btn-dropdown title="@me" class="fixed-top-right shadowed" style="width: 120px">
+    <list-link href="http://www.github.com/cpearson3"><i class="fa fa-github"></i> github</list-link>
+    <list-link href="http://www.twitter.com/cp3dev"><i class="fa fa-twitter"></i> twitter</list-link>
+    <list-link href="http://www.linkedin.com/pub/clarence-pearson/37/12a/b13"><i class="fa fa-linkedin"></i> linkedin</list-link>
+</btn-dropdown>
+
+<slideout type="left" show="menuShown">
+<img class="img img-profile" src="/images/me2.png" alt="">
+<ul class="list-group">
+  <li class="list-item"><a href="/">Home</a></li>
+  <li class="list-item"><a href="/about/">About</a></li>
+  <li class="list-item"><a href="/resume/">Resume</a></li>
+  <li class="list-item"><a href="/portfolio/">Portfolio</a></li>
+  <li class="list-item"><a href="/contact/">Contact</a></li>
+</ul>
+</slideout>
