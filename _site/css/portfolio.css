@@ -6,6 +6,10 @@ $warning-color: #9A3334;
 $attention-color: #ce4e34;
 $active-color: #cbc5c1;
 */
+img {
+  height: 150px;
+  border-radius: 4px; }
+
 figure {
   display: block;
   position: relative;

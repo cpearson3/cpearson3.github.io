@@ -1064,10 +1064,9 @@ input[type=checkbox], input[type=radio] {
   color: #75a3d1;
   text-decoration: underline;
   font-weight: bolder;
-  transition: font-size 0.3s ease; }
+  transition: font-weight 0.3s ease; }
   .slideout-left a:hover {
-    font-weight: bold;
-    font-size: 1.6em; }
+    font-weight: bold; }
 .slideout-left .list-group {
   border: none; }
 .slideout-left .list-item {

@@ -28,11 +28,10 @@ $border-radius: 4px;
         color: $primary-color;
         text-decoration: underline;
         font-weight: bolder;
-        transition: font-size $transition-time ease;
+        transition: font-weight $transition-time ease;
     
         &:hover {
             font-weight: bold;
-            font-size: $font-size;
         }
     }
     
