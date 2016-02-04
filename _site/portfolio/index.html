@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html ng-app="MyApp">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title> Clarence Beaulo Pearson III -  Portfolio of Work </title>
+  <meta name="description" content="I am Clarence B Pearson III, Web Developer">
+  
+  <link rel="stylesheet" href="/css/site.css">
+  <link rel="stylesheet" href="/css/animate.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+    
+      <link rel="stylesheet" href="/css/portfolio.css" media="screen" type="text/css">
+    
+  
+</head>
+
+
+  <body ng-controller="DefaultController">
+    <button class="btn shadowed fixed-top-left" ng-click="showMenu()"><small><i class="fa fa-bars"></i> menu</small></button>
+<btn-dropdown title="@me" class="fixed-top-right shadowed" style="width: 120px">
+    <list-link href="http://www.github.com/cpearson3"><i class="fa fa-github"></i> github</list-link>
+    <list-link href="http://www.twitter.com/cp3dev"><i class="fa fa-twitter"></i> twitter</list-link>
+    <list-link href="http://www.linkedin.com/pub/clarence-pearson/37/12a/b13"><i class="fa fa-linkedin"></i> linkedin</list-link>
+</btn-dropdown>
+
+    
+    <div class="container nav-pad">
+      <h1>Portfolio</h1>
+<br>
+<div class="row">
+  <div class="col-6">
+    <a href="http://www.bootsmooth.com" target="_blank">
+     <img class="img center" src="/images/bootsmooth.png">
+    </a>
+     <p>Bootsmooth is an open-souce CSS UI kit. I built Bootsmooth to accomplish:</p>
+     <ol>
+       <li>Learn Sass</li>
+       <li>Create a reusable CSS framework for future projects</li>
+     </ol>
+     <p><a href="http://www.bootsmooth.com" target="_blank">Visit the project site</a></p>
+     
+     <hr>
+     
+     <img class="img center" src="/images/woods.png">
+
+      <p class="title">WVWoodsFamilyReunion.org</p>
+      <p class="description">The home of the Woods Family Reunion</p>
+      <a href='http://wvwoodsfamilyreunion.org' target='_blank'>View Site</a>
+     
+  </div>
+
+  <div class="col-6">
+
+     <img class="img center" src="/images/tb.png">
+
+      <p class="title">ThousandBlurbs.com</p>
+      <p class="description">A social blog</p>
+      <a href="http://www.thousandblurbs.com" target="_blank">View Site</a>
+
+      <hr>
+
+      <img class="img center" src="/images/classics.png">
+      <p class="title">Classics Cafe</p>
+      <p class="description">A small cafe located in Fairmont WV</p>
+      <a href="http://www.classicsfairmont.com" target="_blank">View Site</a>
+
+  </div>
+</div>
+
+<!-- br>
+<p class="lead">Coding projects:</p>
+
+<div class="row">
+  <!-- div class="col-4">
+    <figure class="cap-right">
+      <p class="title"><i class="fa fa-calculator"></i> Simple Calc</p>
+      <p class="description">A Simple Javascript Calculator</p>
+      <figcaption>
+        <a href="/calculator/" target="_blank">Visit Project</a>
+      </figcaption>
+    </figure>
+  </div>
+  <div class="col-4">
+    <figure class="cap-right">
+      <p class="title"><i class="fa fa-clock-o"></i> Interval Clock</p></p>
+      <p class="description">A Simple Interval Clock</p>
+      <figcaption>
+        <a href="/interval-clock/" target="_blank">Visit Project</a>
+      </figcaption>
+    </figure>
+  </div>
+  <div class="col-4">
+     <figure class="cap-right">
+      <p class="title"><i class="fa fa-quote-left"></i> Random Quotes</p>
+      <p class="description">A random quote generator</p>
+      <figcaption>
+        <a href="/random-quote/" target="_blank">Visit Project</a>
+      </figcaption>
+    </figure>
+  </div>
+</div -->
+
+    </div>
+    
+    <div class="footer bg-inverse txt-center">
+  <p>
+    <a href="/">Home</a></li> | 
+    <a href="/about/">About</a> | 
+    <a href="/resume/">Resume</a> | 
+    <a href="/contact/">Contact</a>
+  </p>
+  <p class="h5">
+    <a style="padding-right: 8px" class="fa fa-github"></a> 
+    <a style="padding-right: 8px" class="fa fa-twitter"></a> 
+    <a class="fa fa-linkedin"></a>
+  </p>
+  <p>Clarence Pearson &copy; 2016</p>
+</div>
+<slideout type="left" show="menuShown">
+<img class="img img-profile" ng-src="/images/me2.png" alt="">
+<ul class="list-group">
+  <li class="list-item"><a href="/">Home</a></li>
+  <li class="list-item"><a href="/about/">About</a></li>
+  <li class="list-item"><a href="/resume/">Resume</a></li>
+  <li class="list-item"><a href="/contact/">Contact</a></li>
+</ul>
+</slideout>
+    <!-- Footer -->
+<!-- Scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+<script src="/javascript/bootsmooth.js"></script>
+<script src="/javascript/default.js"></script>
+
+
+  </body>
+
+</html>
