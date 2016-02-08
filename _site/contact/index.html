@@ -27,17 +27,63 @@
 
     
     <div class="container nav-pad">
-      <h1>Contact</h1>
-<br>
-<h3>Need to get some work done?</h3>
-<h4>Let's get a discussion started</h4>
+      <div ng-controller="ContactController">
+<h1>Contact</h1>
+<p>Let's get a discussion started.</p>
+<form class="form" ng-submit="sendMessage()">
+    <fieldset>
+        <div class="row">
+            <div class="col-2">
+                <label>Name</label>
+            </div>
+            <div class="col-10">
+                <input class="form-input" type="text" name="name" ng-model="name" placeholder="Name" required="true" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <label>Email Address</label>
+            </div>
+            <div class="col-10">
+                <input class="form-input" type="text" name="email" ng-model="email" placeholder="Email" required="true" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <label>Company</label>
+            </div>
+            <div class="col-10">
+                <input class="form-input" type="text" name="company" ng-model="company" placeholder="Company" />
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-2">
+                <label>Message</label>
+            </div>
+            <div class="col-10">
+                <textarea class="form-input" name="feedback" rows="6" ng-model="message" placeholder="Your message" required="true"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2">
+            </div>
+            <div class="col-10">
+                <button class="btn btn-go">Submit</button>
+            </div>
+        </div>
+    </fieldset>
+</form>
 <br>
 <p>
+<h5>Other ways to contact me:</h5>
 <a target="_blank" href="https://twitter.com/cp3dev" class="btn"><i class="fa fa-twitter"></i> Twitter</a>
 <a target="_blank" href="http://github.com/cpearson3" class="btn"><i class="fa fa-github"></i> Github</a>
 <a target="_blank" href="http://www.linkedin.com/pub/clarence-pearson/37/12a/b13" class="btn"><i class="fa fa-linkedin"></i> LinkedIn</a>
-<a target="_blank" href="clarence.pearson3@gmail.com" class="btn btn-default"><i class="fa fa-envelope"></i> Mail</a>
+<a target="_top" href="mailto:clarence.pearson3@gmail.com" class="btn btn-default"><i class="fa fa-envelope"></i> Mail</a>
 </p>
+</div>
+
     </div>
     
     <div class="footer bg-inverse txt-center">
@@ -45,7 +91,7 @@
     <a href="/">Home</a></li> | 
     <a href="/about/">About</a> | 
     <a href="/resume/">Resume</a> | 
-    <a href="/contact/">Contact</a>
+    <a href="http://clarencebeaulo.appspot.com/">Contact</a>
   </p>
   <p class="h5">
     <a style="padding-right: 8px" class="fa fa-github"></a> 
@@ -60,7 +106,7 @@
   <li class="list-item"><a href="/">Home</a></li>
   <li class="list-item"><a href="/about/">About</a></li>
   <li class="list-item"><a href="/resume/">Resume</a></li>
-  <li class="list-item"><a href="/contact/">Contact</a></li>
+  <li class="list-item"><a href="http://clarencebeaulo.appspot.com">Contact</a></li>
 </ul>
 </slideout>
     <!-- Footer -->
@@ -69,6 +115,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
 <script src="/javascript/bootsmooth.js"></script>
 <script src="/javascript/default.js"></script>
+
+  
+  <script src='/javascript/contact.js' type="text/javascript"></script>
+  
 
 
   </body>
